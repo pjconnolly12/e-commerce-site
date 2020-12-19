@@ -1,6 +1,6 @@
 import React from 'react';
-import { ProductBasic } from './ProductBasic';
-import { SimilarItems } from './SimilarItems';
+import { ProductBasic } from './featureComponents/ProductBasic';
+import { SimilarItems } from './featureComponents/SimilarItems';
 
 export const CartPage = (): JSX.Element => {
   return (
