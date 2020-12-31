@@ -5,7 +5,7 @@ import { AddToCart } from './featureComponents/AddToCart';
 export const SearchResults = (): JSX.Element => {
   return (
     <div>
-      
+      Results
     </div>
   );
 };

@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  useParams
 } from "react-router-dom";
 import { Navbar } from './Navbar';
 import { Homepage } from './Homepage';
@@ -18,10 +17,7 @@ export const App = (): JSX.Element => {
   <Router>
     <Navbar />
     <Switch>
-      <Route path='/'>
-        <Homepage />
-      </Route>
-      <Route patch='/categories/:category'>
+      <Route path='/categories/:category'>
         <CategoryPage />
       </Route>
       <Route path='/product/:id'>
@@ -35,6 +31,9 @@ export const App = (): JSX.Element => {
       </Route>
       <Route path='/checkout'>
         <Checkout />
+      </Route>
+      <Route path='/'>
+        <Homepage />
       </Route>
     </Switch>
   </Router>
