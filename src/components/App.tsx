@@ -9,7 +9,7 @@ import { Homepage } from './Homepage';
 import { CategoryPage } from './CategoryPage';
 import { ProductPage } from './ProductPage';
 import { CartPage } from './CartPage';
-import { SearchResults } from './SearchResults';
+import { SearchResults } from './featureComponents/SearchResults';
 import { Checkout } from './Checkout';
 
 export const App = (): JSX.Element => {
@@ -25,9 +25,6 @@ export const App = (): JSX.Element => {
       </Route>
       <Route path='/cart'>
         <CartPage />
-      </Route>
-      <Route path='/results'>
-        <SearchResults />
       </Route>
       <Route path='/checkout'>
         <Checkout />
